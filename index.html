@@ -1,0 +1,246 @@
+
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+        {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Oxygen;
+  }
+  .wrapper{
+    max-width: 1920px;
+    margin: auto;
+  }
+  .main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #ff6d00;
+    z-index: 10;
+  }
+  .home-button {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 5px;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 6px;
+    padding: 0;
+  }
+  .nav-link {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .nav-link:hover {
+    background: #ff9e40;
+    box-shadow: 0 0 15px 1px #c43c00;
+    font-weight: 700;
+  }
+  #welcome-section {
+    background: url("http://image.ibb.co/bUeaH7/abstract.jpg") center fixed no-repeat;
+  }
+  #about {
+    background: url("http://image.ibb.co/e4VRPn/circles.jpg") center fixed;
+  }
+  #projects {
+    background: url("http://image.ibb.co/erhjAS/shapes.jpg") center fixed;
+  }
+  #contact {
+    background: #9eff40 url("http://image.ibb.co/jogBqS/banner.jpg") no-repeat;
+    min-height: 0;
+    height: 600px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .section-content {
+    text-align: center;
+    padding: 15px;
+    background: #ff6d00;
+    box-shadow: 0 0 15px 1px #c43c00;
+    max-width: 90%;
+  }
+  h1 {
+    font-family: Rufina;
+    font-size: 2.5em;
+  }
+  .project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+  }
+  .project-tile {
+    flex-basis: 250px;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background: #ff6d00;
+    box-shadow: 0 0 15px #c43c00;
+    text-align: center;
+  }
+  .project-tile:hover {
+    transform: scale(1.1);
+    z-index: 9;
+  }
+  .tile-details {
+    position: relative;
+  }
+  .tile-image {
+    width: 100%;
+  }
+  .tile-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px;
+    background: #ff6d00;
+    z-index: -1;
+    font-weight: 700;
+  }
+  .project-tile:hover .tile-text {
+    z-index: 1;
+    opacity: .8;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  .flex-parent {
+    display: flex;
+  }
+  .flex-item {
+    border: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+  input, textarea {
+    display: block;
+    width: 250px;
+    max-width: 95%;
+    min-height: 30px;
+    background: #ff9e40;
+    border: none;
+    resize: none;
+    padding: 5px;
+  }
+  input:focus, textarea:focus {
+    box-shadow: 0 0 15px 1px #c43c00;
+    outline: 0;
+  }
+  footer {
+    background: #9eff40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 600px);
+    min-height: 60px;
+  }
+  p {
+    margin: 0;
+  }
+  @media only screen and (max-width: 620px) {
+    .flex-parent {
+      flex-direction: column;
+    }
+  }
+  </style>
+</head>
+<div class="wrapper">
+  <nav class="main-nav" id="navbar">
+    <a class="home-button" href="#">keerthika</a>
+    <ul class="navigation">
+      <li class="nav-item"><a class="nav-link" href="#welcome-section">Welcome</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <div class="section-content">
+      <h1>Welcome to my portfolio page</h1>
+      <a class="nav-link" href="#about">Learn More</a>
+    </div>
+  </section>
+  <section id="about">
+    <div class="section-content">
+      <h2>About myself</h2>
+      <p>I am an aspiring web developer and currently a student of madurai sivakasi nadars pioneer meenakshi womens college.</br>Educational qualification : BCA</br> </p>
+      <a class="nav-link" href="#projects">My Projects</a>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="section-content">
+      <h2>My basic HTML-CSS projects</h2>
+      <div class="project-tiles">
+        <div class="project-tile">
+          <div class="tile-details">
+          </div>
+        <div class="project-tile">
+          <div class="tile-details">
+            <img class="tile-image" src="http://image.ibb.co/fFo2x7/Landing.png" alt="My landing page">
+          </div>
+          <span><a href="file:///C:/Users/Administrator/Documents/naan%20udhalvan/calculator.html" target="_blank">CALCULATOR </a></span>
+        </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact me:</h2>
+      <form action="#">
+        <div class="flex-parent">
+          <div class="flex-item">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your full name:">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email address:">
+          </div>
+          <div class="flex-item">
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="7"  placeholder="Your message:"></textarea>
+          </div>
+        </div>
+        <input class="nav-link" type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p><a id="profile-link" href="https://docs.google.com/document/u/0/d/1c0hoHvbIRmun-F18Ftt_uizkBuZ-xKD-/edit?usp=docs_home&ths=true&rtpof=true" target="_blank">Visit CV</a></p>
+  </footer>
+</div>
